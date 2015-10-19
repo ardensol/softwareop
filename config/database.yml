@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: softwareoptest
+  pool: 5
+  username: carlos
+  password: latino
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: softwareopdev
+  pool: 5
+  username: carlos
+  password: latino
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: softwareopprod
+  pool: 5
+  username: carlos
+  password: latino
