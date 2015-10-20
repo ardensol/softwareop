@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
 
 	def index
-		if params[:user]
-			@users = User.search(params[:user])
+		if params[:search]
+			@users = User.search(params[:search])
 		else
 			@users = User.all
 		end
 	end
-
 
 end
