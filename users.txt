@@ -1,0 +1,8 @@
+dan	27	accountant
+emily	25	artist
+john	23	quality_control
+jason	30	janitor
+drake	40	artist
+drake	28	accountant
+jason	25	artist
+john	30	quality_control

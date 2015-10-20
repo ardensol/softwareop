@@ -1,1 +1,24 @@
-Hello WOrld
+<%= form_tag(users_path, method: 'get') do %>
+	<%= text_field_tag('user[first_name]', nil, placeholder: 'Search by first name...') %>
+	<%= text_field_tag('user[age]', nil, placeholder: 'Search by age...') %>
+	<%= text_field_tag('user[profession]', nil, placeholder: 'Search by profession...') %>
+	<%= submit_tag('Search') %>
+<% end %>
+
+
+<h1> List of Users </h1>
+
+<table>
+	<tr>
+		<td>First Name</td>
+		<td>Age</td>
+		<td>Profession</td>
+	</tr>
+<% @users.each do |user| %>
+	<tr>
+	<td><%= user.first_name %></td>
+	<td><%= user.age %></td>
+	<td><%= user.profession %></td>
+	</tr>
+<% end %>
+</table>
